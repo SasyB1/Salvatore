@@ -1,1 +1,7 @@
-<p>completed works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12 d-inline-block m-1" *ngFor="let post of listCompleted">
+      <app-card [ListWithUser]="post"></app-card>
+    </div>
+  </div>
+</div>

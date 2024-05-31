@@ -1,1 +1,35 @@
-<p>home works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center"><h1>Just Do It.</h1></div>
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search Author"
+              aria-label="Add a task"
+              aria-describedby="button-addon2"
+              (input)="filterPosts($event)"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-inline-block m-1" *ngFor="let post of listArr">
+              <app-card [ListWithUser]="post"></app-card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

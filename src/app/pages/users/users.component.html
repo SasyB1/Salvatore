@@ -1,1 +1,7 @@
-<p>users works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12 d-inline-block m-1" *ngFor="let users of listArr">
+      <app-users-card [CardUsers]="users"></app-users-card>
+    </div>
+  </div>
+</div>
