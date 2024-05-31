@@ -6,8 +6,8 @@
       <div
         class="col-12 d-inline-block m-1"
         [ngClass]="{
-          'bg-success': post.completed,
-          'bg-danger': !post.completed
+          'bg-verde': post.completed,
+          'bg-rosso': !post.completed
         }"
         *ngFor="let post of listArr"
       >
