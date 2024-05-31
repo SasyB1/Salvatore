@@ -18,6 +18,9 @@ export class HomeComponent {
       this.originalListArr = data;
       this.listArr = data;
     });
+    let audio = new Audio();
+    audio.src = '../../../assets/audio/Just do it! meme.mp3';
+    audio.play();
   }
 
   filterPosts(event: any) {
