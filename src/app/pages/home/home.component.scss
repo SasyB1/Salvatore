@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap");
 .greenButton {
-  background-color: #7ee999;
+  background-color: #f2822a;
 }
 
 h1 {
   font-family: "Reddit Mono", monospace;
   font-size: 5em;
+  background: linear-gradient(to right, #fb0000, #f2822a);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 img {
@@ -15,4 +18,8 @@ img {
 iframe {
   width: 560px;
   height: 300px;
+}
+
+.colorbg {
+  background: linear-gradient(to bottom, #252424, #eb914d);
 }

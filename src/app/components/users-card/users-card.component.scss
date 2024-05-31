@@ -1,6 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Reddit+Mono:wght@200..900&display=swap");
 .bg-verde {
   background-color: #7ee999;
 }
 .bg-rosso {
   background-color: #d16363;
+}
+
+img {
+  width: 50px;
+}
+
+.cardBody {
+  background-color: #e0debd;
+}
+
+.card {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
 }

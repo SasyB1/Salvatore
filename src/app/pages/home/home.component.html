@@ -1,5 +1,8 @@
-<div class="container">
-  <div class="row">
+<div class="container-fluid">
+  <div class="row align-items-center colorbg pt-3">
+    <div class="col-auto d-none d-md-block">
+      <img src="../../../assets/image/image2.png" alt="Just Do It logo" />
+    </div>
     <div class="col d-flex justify-content-center mt-1">
       <iframe
         src="https://www.youtube.com/embed/ZXsQAXx_ao0"
@@ -7,6 +10,9 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
+    </div>
+    <div class="col-auto d-none d-md-block">
+      <img src="../../../assets/image/image3.png" alt="Just Do It logo" />
     </div>
 
     <div class="col-12 text-center"><h1>Just Do It.</h1></div>
@@ -18,7 +24,7 @@
               type="text"
               class="form-control"
               placeholder="Search Author"
-              aria-label="Add a task"
+              aria-label="Search author"
               aria-describedby="button-addon2"
               (input)="filterPosts($event)"
             />
@@ -33,7 +39,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-12 d-inline-block m-1" *ngFor="let post of listArr">
+            <div class="col-12 d-inline-block" *ngFor="let post of listArr">
               <app-card [ListWithUser]="post"></app-card>
             </div>
           </div>
