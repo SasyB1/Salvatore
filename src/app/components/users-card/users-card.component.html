@@ -1,1 +1,22 @@
-<p>users-card works!</p>
+<div class="card mb-3" *ngIf="CardUsers">
+  <div class="card-body d-flex align-items-center p-1 ms-1">
+    <img [src]="CardUsers.image" alt="Img profile" class="rounded-circle" />
+    <div class="flex-grow-1 ms-2">
+      <h5 class="card-title">{{ CardUsers.title }}</h5>
+      <div
+        class="col-12 d-inline-block m-1"
+        [ngClass]="{
+          'bg-success': post.completed,
+          'bg-danger': !post.completed
+        }"
+        *ngFor="let post of listArr"
+      >
+        <input type="checkbox" [(ngModel)]="post.completed" class="me-3" />
+        {{ post.todo }}
+      </div>
+      <p class="card-text">
+        Creator: {{ CardUsers.firstName }} {{ CardUsers.lastName }}
+      </p>
+    </div>
+  </div>
+</div>

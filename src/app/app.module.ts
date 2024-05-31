@@ -6,11 +6,11 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { UsersCardComponent } from './components/users-card/users-card.component';
-import { HomeCardComponent } from './components/home-card/home-card.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CompletedComponent } from './pages/completed/completed.component';
 import { UsersComponent } from './pages/users/users.component';
 import { FormsModule } from '@angular/forms';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -18,10 +18,10 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     FooterComponent,
     UsersCardComponent,
-    HomeCardComponent,
     HomeComponent,
     CompletedComponent,
     UsersComponent,
+    CardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
